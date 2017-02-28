@@ -9,15 +9,13 @@ $username="bob";
 $password="pass";
 
 $received_username=$_POST['username'];
-echo $received_username;
+//echo $received_username;
 $received_password=$_POST['password'];
-echo $received_password;
+//echo $received_password;
 if($username==$received_username && $password==$received_password){
     setcookie("access_level","standard_user",0);
     //echo $_COOKIE["access_level"];
-    echo "yup";
-    header("homePage.php");
-    echo "yes";
+    header("http://phpintro.azurewebsites.net/homePage.php");
 }else{
     echo "nope";
 }
