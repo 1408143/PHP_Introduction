@@ -6,8 +6,10 @@
  * Time: 15:36
  */
 
-if($access_level=="standard_user"){
+if($_COOKIE["access_level"]=="standard_user"){
     echo "Logged in!";
+}else{
+    echo "not?";
 }
 ?>
 
