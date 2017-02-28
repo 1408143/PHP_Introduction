@@ -7,7 +7,7 @@
  */
 $username="bob";
 $password="pass";
-header("http://phpintro.azurewebsites.net/homePage.php");
+http_redirect("http://phpintro.azurewebsites.net/homePage.php");
 $received_username=$_POST['username'];
 //echo $received_username;
 $received_password=$_POST['password'];
