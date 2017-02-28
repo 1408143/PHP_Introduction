@@ -15,7 +15,9 @@ echo $received_password;
 if($username==$received_username && $password==$received_password){
     setcookie("access_level","standard_user",0);
     //echo $_COOKIE["access_level"];
+    echo "yup";
     header("homePage.php");
+    echo "yes";
 }else{
     echo "nope";
 }
