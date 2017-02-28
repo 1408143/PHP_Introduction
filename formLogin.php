@@ -13,7 +13,7 @@ $received_username=$_POST['username'];
 $received_password=$_POST['password'];
 //echo $received_password;
 if($username==$received_username && $password==$received_password){
-    setcookie("access_level","standard_user");
+    setcookie("access_level","standard_user",0);
     //echo $_COOKIE["access_level"];
 
     header("homePage.php");
