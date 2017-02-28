@@ -7,7 +7,7 @@
  */
 $username="bob";
 $password="pass";
-http_redirect("http://phpintro.azurewebsites.net/homePage.php");
+
 $received_username=$_POST['username'];
 //echo $received_username;
 $received_password=$_POST['password'];
@@ -16,6 +16,7 @@ if($username==$received_username && $password==$received_password){
     setcookie("access_level","standard_user",0);
     //echo $_COOKIE["access_level"];
     header("http://phpintro.azurewebsites.net/homePage.php");
+    exit;
 }else{
     echo "nope";
 }
